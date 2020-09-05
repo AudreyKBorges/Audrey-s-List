@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact Us</title>
   <link rel="stylesheet" type="text/css" href="../css/styles.css">
+  <link rel="stylesheet" type="text/css" href="../css/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
 </head>
@@ -17,14 +18,130 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="signsofautism.html">Signs of Autism</a></li>
                 <li><a href="resources.html">Resources</a></li>
                 <li><a href="contactus.html">Contact Us</a></li>
             </ul>
         </nav>
     </div>
-    <footer>
-        Unpublished work copyright &copy; 2019 Audrey Borges
+    <div class="contactus">
+            <h2>Contact Us</h2>
+             <p class="cform">Do you have a question, or are you looking for a specific type of resource? We are happy to help!
+            Please fill out the form below, and we will get back to you soon.</p>
+   
+    <form accept-charset="UTF-8" action="https://www.formbackend.com/f/2bca060215977d09" method="POST" target="_blank" >
+            <fieldset class="contact">
+              <legend>Contact Information</legend>
+    
+                <div class="inner-flex">
+                  <label for="name">Full Name</label>
+                    <input required type="text" id="name" name="user_name" placeholder="Required">
+                </div>
+    
+                <div class="inner-flex">
+                  <label for="email">Email Address</label>
+                    <input required type="email" id="email" name="user_email" placeholder="Required">
+                </div>
+    
+                <div class="inner-flex">
+                  <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="user_phone" placeholder="Required">
+                </div>
+    
+                <div class="inner-flex">
+                  <label for="address">Street Address</label>
+                    <input type="text" id="address" name="street_address">
+                </div>
+    
+                <div class="inner-flex">
+                  <label for="city">City</label>
+                    <input type="text" id="city" name="user_city">
+                </div>
+    
+                <div class="inner-flex">
+                  <label for="state">State</label>
+                  <select id="state" name="user_state">
+                    <option selected="" hidden="" disabled="">Choose State</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District Of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                  </select>
+    
+                  <div class="inner-flex">
+                    <label for="zip">Zip Code</label>
+                    <input type="text" id="zip" name="user_zip">
+                </div>
+              </fieldset>
+    
+            <fieldset>
+              <div class="checkboxes">
+                <label>Would you like to receive our newsletter?</label><br>
+               <input type="radio" id="yes" value="yes" name="format"><label for="yes">&nbsp;Yes</label>
+               <input type="radio" id="no" value="no" name="format"><label for="no">&nbsp;No</label><br>
+                  <p>Are you a(n)</p>
+               <input type="checkbox" name="parent" id="parent" value="css">
+               <label for="parent">Autism Parent or Guardian</label><br>
+               <input type="checkbox" name="professional" id="professional" value="css">
+               <label for="professional">Business or Professional</label><br>
+                <label>What can we help you with?</label for="comment">
+                  <textarea id="comment" name="user_comment"></textarea>
+                  <button type="submit" name="submit">Submit</button>
+                </div>
+              </fieldset>
+            </form>    
+        </div>
+      </div>
+      <footer>
+        Copyright &copy; 2019<script>new Date().getFullYear()>2019&&document.write("-"+new Date().getFullYear());</script>,
+          Audrey's List.
     </footer>
 </body>
-</div>
 </html>
