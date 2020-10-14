@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Kid's Corner</title>
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">
+  <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+
+  <script>
+      <!-- this function when invoked allows the target item to be dragged -->
+    function dragIt(target, e) {
+        e.dataTransfer.setData('SpanImg', target.id);
+    }
+    
+    <!-- this function allows the item that is being dragged...to be dropped...it's a dropzone target. -->
+    function dropIt(target, e) {
+        var id = e.dataTransfer.getData('SpanImg');
+        <!-- this line adds the element that is being dropped...to the DOM in the location of the drop zone. -->
+        target.appendChild(document.getElementById(id));
+        e.preventDefault();
+    }
+    
+    <!-- this function allows the item that is being dragged...to be dropped...it's  dropzone target #2. -->
+    function dropIt(target, e) {
+        var id = e.dataTransfer.getData('SpanImg');
+        <!-- this line calls the function below that removes the element that is being dropped from the DOM. -->
+        target.appendChild(document.getElementById(id));
+        e.preventDefault(); 
+    }
+    function removeElement(id)    {
+        var d_node = document.getElementById(id);
+        d_node.parentNode.removeChild(d_node);
+    }
+  </script>
+</head>
+<body>
+  <div class="menu">
+    <header>
+      <a href="file:///Users/sweet/Desktop/Borges_week_6/html/index.html">
+        <img src="../images/logo.png" class="logo" alt="Audrey's List" height="275" width="275">
+        </a> 
+      </header>
+    <nav>
+  <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="signsofautism.html">Signs of Autism</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="kidscorner.html">Kid's Corner</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+  </ul>
+    </nav>
+  </div>
+  <section class="container">
+  <h1 class="kidsh1">Kid's Corner</h1>
+  <h2 class="h2">
+      Hey there! I need your help putting away the toys and school supplies.
+  </h2>
+  <div id="toys" ondrop="dropIt(this, event)" ondragenter="return false" ondragover="return false">   
+    <span draggable="true" id="1" ondragstart="dragIt(this, event)">
+      <img class="color-change" src="../images/toys.png" alt="toys" height="150" width="225">
+    </span>
+     <span draggable="true" id="2" ondragstart="dragIt(this, event)">
+      <img class="color-change" src="../images/toys.png" alt="toys" height="150" width="225">   
+    </span>
+     <span draggable="true" id="3" ondragstart="dragIt(this, event)">
+      <img class="color-change" src="../images/toys.png" alt="toys" height="150" width="225">    
+    </span>
+  </div>
+ 
+  <div id="school-supplies" ondrop="dropIt(this, event)" ondragenter="return false" ondragover="return false">
+    <span draggable="true" ondragstart="dragIt(this, event)">
+      <img class="color-change" src="../images/school-supplies.png" alt="school supplies" height="150" width="150">    
+    </span>
+    <span draggable="true" id="4" ondragstart="dragIt(this, event)">
+      <img class="color-change" src="../images/school-supplies.png" alt="school supplies" height="150" width="150">   
+    </span>
+    <span draggable="true" id="5" ondragstart="dragIt(this, event)">
+      <img class="color-change" src="../images/school-supplies.png" alt="school supplies" height="150" width="150">   
+    </span>
+  </div>
+  <h3>
+      This is where the toys belong. Drag the toys here.
+  </h3>
+  <div id="box1" ondrop="dropIt(this, event)" ondragenter="return false" ondragover="return false">
+    <span draggable="true" id="6" ondragstart="dragIt(this, event)">
+      <img src="../images/toys.png" alt="toys" height="150" width="225">    
+    </span>
+    <span draggable="true" id="7" ondragstart="dragIt(this, event)">
+      <img src="../images/toys.png" alt="toys" height="150" width="225">    
+    </span>
+  </div>
+  <h3>
+      This is where the school supplies belong. Drag the school supplies here.
+  </h3>
+  <div id="box2" ondrop="dropIt(this, event)" ondragenter="return false" ondragover="return false">
+    <span draggable="true" id="8" ondragstart="dragIt(this, event)">
+      <img src="../images/school-supplies.png" alt="school supplies" height="150" width="150">    
+    </span>
+      <span draggable="true" id="9" ondragstart="dragIt(this, event)">
+        <img src="../images/school-supplies.png" alt="school supplies" height="150" width="150">    
+      </span>
+  </div>
+  <h3>
+    Good job! You put away all of the toys and school supplies!
+</h3>
+</section>
+  <footer>
+    Copyright &copy; 2019<script>new Date().getFullYear()>2019&&document.write("-"+new Date().getFullYear());</script>,
+     Audrey's List.
+</footer>
+</body>
+</html>

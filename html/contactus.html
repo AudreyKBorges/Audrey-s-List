@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
   <title>Contact Us</title>
   <link rel="stylesheet" type="text/css" href="../css/styles.css">
   <link rel="stylesheet" type="text/css" href="../css/normalize.css">
@@ -9,57 +9,59 @@
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container1">
-    <div class="left">
-    <nav>
-            <header>
-                <h1>Audrey's<br>List</h1>
-            </header>
-            <ul>
-                <li><a href="index.html">Home</a></li>
+    <div class="menu">
+        <header>
+          <a href="file:///Users/sweet/Desktop/Borges_week_6/html/index.html">
+            <img src="../images/logo.png" class="logo" alt="Audrey's List" height="275" width="275">
+            </a> 
+        </header>
+        <nav>
+			<ul>
+				        <li><a href="index.html">Home</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="signsofautism.html">Signs of Autism</a></li>
                 <li><a href="resources.html">Resources</a></li>
+                <li><a href="kidscorner.html">Kid's Corner</a></li>
                 <li><a href="contactus.html">Contact Us</a></li>
-            </ul>
+			</ul>
         </nav>
-    </div>
-    <div class="contactus">
-            <h2>Contact Us</h2>
+      </div>
+    <div class="container">
+            <h1 class="h1">Contact Us</h1>
              <p class="cform">Do you have a question, or are you looking for a specific type of resource? We are happy to help!
             Please fill out the form below, and we will get back to you soon.</p>
    
-    <form accept-charset="UTF-8" action="https://www.formbackend.com/f/2bca060215977d09" method="POST" target="_blank" >
+    <form accept-charset="UTF-8" action="https://www.formbackend.com/f/2bca060215977d09" method="POST" target="_blank">
             <fieldset class="contact">
               <legend>Contact Information</legend>
     
-                <div class="inner-flex">
+                <div>
                   <label for="name">Full Name</label>
                     <input required type="text" id="name" name="user_name" placeholder="Required">
                 </div>
     
-                <div class="inner-flex">
+                <div>
                   <label for="email">Email Address</label>
                     <input required type="email" id="email" name="user_email" placeholder="Required">
                 </div>
     
-                <div class="inner-flex">
+                <div>
                   <label for="phone">Phone Number</label>
                     <input type="tel" id="phone" name="user_phone" placeholder="Required">
                 </div>
     
-                <div class="inner-flex">
+                <div>
                   <label for="address">Street Address</label>
                     <input type="text" id="address" name="street_address">
                 </div>
     
-                <div class="inner-flex">
+                <div>
                   <label for="city">City</label>
                     <input type="text" id="city" name="user_city">
                 </div>
     
-                <div class="inner-flex">
-                  <label for="state">State</label>
+                <div>
+                  <label for="state">State</label><br>
                   <select id="state" name="user_state">
                     <option selected="" hidden="" disabled="">Choose State</option>
                     <option value="AL">Alabama</option>
@@ -114,11 +116,12 @@
                     <option value="WI">Wisconsin</option>
                     <option value="WY">Wyoming</option>
                   </select>
+                </div><br>
     
-                  <div class="inner-flex">
-                    <label for="zip">Zip Code</label>
+                  <div>
+                    <label for="zip">Zip Code</label><br>
                     <input type="text" id="zip" name="user_zip">
-                </div>
+                  </div>
               </fieldset>
     
             <fieldset>
@@ -131,14 +134,13 @@
                <label for="parent">Autism Parent or Guardian</label><br>
                <input type="checkbox" name="professional" id="professional" value="css">
                <label for="professional">Business or Professional</label><br>
-                <label>What can we help you with?</label for="comment">
+                <label>What can we help you with?</label>
                   <textarea id="comment" name="user_comment"></textarea>
                   <button type="submit" name="submit">Submit</button>
                 </div>
               </fieldset>
-            </form>    
-        </div>
-      </div>
+            </form>  
+            </div>  
       <footer>
         Copyright &copy; 2019<script>new Date().getFullYear()>2019&&document.write("-"+new Date().getFullYear());</script>,
           Audrey's List.
