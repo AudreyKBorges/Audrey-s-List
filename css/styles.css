@@ -128,6 +128,10 @@ a:active {
   display: inline;
 }
 
+.logo2 {
+  display: none;
+}
+
 .image {
   margin-left: auto;
   margin-right: auto;
@@ -145,7 +149,6 @@ a:active {
   padding: 1em;
   border-radius: 10px;
   height: 100%;
-  max-width: 35%;
 }
 
 .slide-left {
@@ -401,13 +404,13 @@ footer {
 @media (min-width: 320px) {
 
 .homepage {
-  background-color: gray;
+  background-color: #dcd2c6;
 }
 
 .homepageh1 {
   font-size: 6vw;
   display: inline-block;
-  padding-left: 0;
+  padding-left: 1em;
 }
 
 .kidsh1 {
@@ -415,13 +418,14 @@ footer {
   height: 65px;
   width: 170px;
   padding: 1em;
+  margin-left: 1em;
 }
 
 h1 {
   font-size: 15px;
   padding-top: .25em;
   padding-bottom: 0;
-  padding-left: 1em;
+  padding-left: 2em;
 }
 
 .h1 {
@@ -436,37 +440,38 @@ h1 {
   display: initial;
 }
 
-ul, .menu {
-  width: 35%;
-  padding-right: 1em;
-  position: fixed;
-}
-
 li {
   padding: 12px 0 12px 0;
-  font-size: 12px;
+  font-size: 10px;
+}
+
+#mobile-nav {
+  width: 20%;
+  position: fixed;
 }
 
 nav {
   margin-top: 0;
+  padding-left: 5px;
 }
 
 .logo {
-  height: 125px;
-  width: 125px;
+  display: none;
+}
+
+.logo2 {
+  display: inline-block;
+  height: 70px;
+  width: 70px;
 }
 
 .container {
   margin-top: 0;
   display: block;
-  padding-left: 8em;
+  padding-left: 5em;
   padding-right: 1em;
   height: auto;
   width: 100%;
-}
-
-.home-text {
-  width: 500px;
 }
 
 p, form, table {
@@ -479,23 +484,18 @@ form, table {
 }
 
 .image {
-  height: 100px;
-  width: 150px;
+  height: 150px;
+  width: 200px;
+}
+
+footer {
+  font-size: 8px;
 }
 
 @media (min-width: 480px) {
 
-  .logo {
-    height: 175px;
-    width: 175px;
-  }
-
   .container {
     padding-left: 12em;
-  }
-
-  .home-text {
-    width: 750px;
   }
 
   li {
@@ -511,26 +511,38 @@ form, table {
     height: 120px;
     width: 240px;
   }
+
 }
 
 @media (min-width: 768px) {
   
     .logo {
-      height: 200px;
-      width: 200px;
+      display: inline-block; 
+      height: 175px;
+      width: 175px;
+      margin-left: -.7em;
     }
     
-    ul, .menu {
+    .logo2 {
+      display: none;
+    }
+
+    .menu {
       height: 100%;
-      width: 25%;
+      width: 40%;
     }
     
     .homepageh1 {
       font-size: 30px;
     }
 
+    .home-text {
+      margin-top: 25.75em;
+      height: 40%;
+    }
+
     .container {
-      padding-left: 15em;
+      padding-left: 11em;
     }
    
     .h1 {
@@ -564,21 +576,37 @@ form, table {
     font-style: normal;
   }
 
+  .break {
+    display: none;
+  }
+
 }
   
   @media (min-width: 1024px) {
   
   .text {
-    margin: 0, auto;
+    margin: 0;
   }
 
   .logo {
-    height: 250px;
-    width: 250px;
+    display: inline-block;
+    height: 225px;
+    width: 225px;
+  }
+
+  h1 {
+    padding-top: .5em;
+    padding-left: 5em;
+  }
+
+  .homepageh1 {
+    padding-top: .5em;
+    padding-left: 3em;
   }
 
   li {
     font-size: 16px;
+    padding: 1em;
   }
 
   .break {
@@ -610,7 +638,7 @@ form, table {
   }
   
   .contactus {
-    margin: 0, auto;
+    margin: 0;
     padding: 0 8em 8em 25em;
   }
   
@@ -618,4 +646,32 @@ form, table {
     width: 25%;
   }
   
+  footer {
+    font-size: 10px;
   }
+
+  }
+
+  @media (min-width: 1366px) {
+
+    .container {
+      padding-left: 19em;
+    }
+
+    .home-text {
+      height: 100%;
+      width: 60%;
+    }
+
+    .logo {
+      height: 300px;
+      width: 300px;
+    }
+
+    .image {
+      height: 325px;
+      width: 500px;
+      margin-left: 15em;
+    }
+  }
+}
